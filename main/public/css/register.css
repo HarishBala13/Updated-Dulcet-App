@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat','sans-serif';
+    height: 100vh;
+}
+.system{
+    background: #5199E4;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    overflow: hidden;
+}
+#h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 20px 40px;
+}
+.social-media-system{
+    justify-content: center;
+    text-align: center;
+}
+.text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    padding: 15px 2px;
+    color: white;
+}
+nav ul{
+    display: flex;
+    padding: 0 70px;
+}
+nav ul li{
+    background-color: #fff;
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 90%;;
+    padding: 10px;
+    border: 3px solid cadetblue;
+    box-shadow: 1.95px 1.95px 2.6px rgba(0, 0, 0, 1);
+    list-style-type: none;
+}
+.social-media-system nav ul li a{
+    justify-content: center;
+    text-align: center;
+}
+.form{
+    padding: 20px 30px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.form-control label{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+}
+.form-control input:focus{
+    outline: none;
+}
+.form-control i{
+    position: absolute;
+    right: 15px;
+    top: 37px;
+    visibility: hidden;
+}
+.form-control i.fa-circle-check{
+    color: #0cce5d;
+    visibility: hidden;
+}
+.form-control i.fa-circle-exclamation{
+    color: #c80d0d;
+    visibility: hidden;
+}
+.form-control small{
+    color: #c80d0d;
+    visibility: hidden;
+}
+.form button{
+    margin-left: 110px;
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+    width: 100px;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+}
+.form #submit:hover{
+    background-color: #5199E4;
+}
+#login{
+    font-size: 1rem;
+    margin-left: 0px;
+    margin-top: -15px;
+    padding: 30px;
+}
+#loginbtn{
+    margin-left: 220px;
+    margin-top: -20px;
+}
+
+.error{
+    color:red;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    padding: 10px;
+}
+.success{
+    color:green;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media only screen and (max-width : 500px)
+{
+    .form{
+        width: 100%;
+    }
+    .form-group span{
+        font-size: xx-small;
+    }
+}
+
+/*
+.login{
+    padding: 12px 10px;
+}
+.login a{
+    text-decoration: none;
+    color: white;
+}
+.login a:hover{
+    background: #590fe2;
+    border: 2px solid #2adda8;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 5px;
+}  */
+
+ 
+  /* Change styles for span and cancel button on extra small screens 
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+  
+
+.system-1{
+    background-color: azure;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.5);
+}
+*/
+
+/* .form-control span{
+    position: absolute;
+    font-weight: bolder;
+    font-size: 1rem;
+    font-style: oblique;
+    visibility: visible;
+} */
+
+/* .submit a #submit{
+    color: yellowgreen;
+    text-decoration: none;
+} */
+
+
