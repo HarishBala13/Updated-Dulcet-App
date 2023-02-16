@@ -1,0 +1,55 @@
+<DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="/css/login.css">
+<link rel="icon" href="/public/images/logo.png">
+ {{!-- {{> logo}}  --}}
+
+</head>
+<body>
+  <div class="system">
+    <div class="system-contents">
+      <h2 id="h2">Login with</h2>
+      <div class="social-media-system">
+        <nav>
+          <ul>
+            <li><a href="https://www.facebook.com/varunkavier.kavier"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/__delcet__23/"  target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/DelcetMusicHB"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+      {{#if msg}}
+      <p class="{{msg_type}}">{{msg}}</p>
+      {{/if}}
+      <form id="form" class="form" action="/auth/login" method="post">
+        <div class="form-control">
+          <label>Email : </label>
+          <input type="text" placeholder="Enter your email" id="email" name="email">
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label>Password : </label>
+          <input type="password" placeholder="Enter a strong password" id="set_password" name="set_password">
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Error Message</small>
+           <div class="forget-account">
+          <a class="psw" href="/forgotpass">Forgot password?</a>
+          </div>
+        </div>
+        <button type="submit">Login</button>
+         <div class="forget-account">
+          <p>Don't have an account? &nbsp;<a class="newaccount" href="/register">Create One</a></p>
+         </div>
+        {{!-- <script src="HarishSignUp.js"></script> --}}
+      </form> 
+      </div>
+      </div>
+    </body>
+    </html>
